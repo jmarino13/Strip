@@ -1,0 +1,60 @@
+# STRIP Premium Website
+
+A premium Next.js ecommerce starter for STRIP — Beyond Injection.
+
+## What is included
+- Luxury black/gold/purple STRIP storefront
+- Product catalog and cart
+- Consent-first checkout flow
+- Stripe Checkout API route
+- Supabase order and inventory database schema
+- Admin backend for orders, fulfillment status, tracking, inventory, and analytics placeholders
+- Privacy, terms, and compliance starter pages
+
+## Upload to GitHub
+1. Unzip this folder.
+2. Create a new GitHub repo named `strip-website`.
+3. Upload the CONTENTS of this folder, not the zip itself.
+4. The root of GitHub should show `app`, `components`, `lib`, `public`, `supabase`, `package.json`, etc.
+
+## Deploy to Vercel
+1. Go to Vercel.
+2. Add New Project.
+3. Import your GitHub repo.
+4. Deploy.
+
+## Environment variables in Vercel
+Add these in Project Settings > Environment Variables:
+
+```
+NEXT_PUBLIC_SITE_URL=https://your-live-domain.com
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+STRIPE_SECRET_KEY=
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_WEBHOOK_SECRET=
+ADMIN_PASSWORD=make-a-strong-password
+```
+
+## Supabase setup
+1. Create a Supabase project.
+2. Go to SQL Editor.
+3. Paste and run `supabase/schema.sql`.
+4. Copy your Supabase URL, anon key, and service role key to Vercel.
+
+## Stripe setup
+1. Create a Stripe account.
+2. Copy your publishable key and secret key.
+3. Add both to Vercel environment variables.
+4. Redeploy the Vercel project.
+
+## Admin backend
+Go to:
+
+`/admin/orders`
+
+Use the `ADMIN_PASSWORD` you set in Vercel.
+
+## Compliance reminder
+This is a software starter. Product claims, prescription rules, pharmacy workflows, payment rules, HIPAA/privacy language, fulfillment, and telehealth consent should be reviewed by qualified counsel and licensed clinical partners before launch.

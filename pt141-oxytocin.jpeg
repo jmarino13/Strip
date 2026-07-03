@@ -1,0 +1,1 @@
+export default function Success(){return <main className="container section"><div className="card"><h1>Order received.</h1><p className="muted">Thank you. Your order was submitted and payment status will update in the STRIP backend.</p></div></main>}
