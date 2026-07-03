@@ -1,0 +1,1 @@
+export default function Success(){return <main className="section"><h1>Order Received</h1><p>Your payment was received. STRIP will review consent and fulfillment requirements before shipping.</p></main>}
