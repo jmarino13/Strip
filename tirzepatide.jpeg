@@ -1,3 +1,0 @@
-import AdminGuard from '@/components/AdminGuard';
-import AdminShell from '@/components/AdminShell';
-export default function Analytics(){return <AdminGuard><AdminShell><h1>Analytics</h1><div className="grid"><div className="card"><p className="pill">Revenue</p><h2>$0</h2><p className="muted">Connect Stripe and Supabase for live totals.</p></div><div className="card"><p className="pill">Orders</p><h2>0</h2><p className="muted">Paid order count appears after checkout integration.</p></div><div className="card"><p className="pill">Low Stock</p><h2>0</h2><p className="muted">Uses inventory reorder levels.</p></div></div></AdminShell></AdminGuard>}
