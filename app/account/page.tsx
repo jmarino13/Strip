@@ -1,0 +1,1 @@
+export default function Account(){return <main className="section"><h2>Customer Account</h2><div className="card"><p className="muted">Customer login, order history, subscriptions, and shipping updates are scaffolded here. Connect Supabase Auth to activate accounts.</p></div></main>}

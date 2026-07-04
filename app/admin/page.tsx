@@ -1,0 +1,2 @@
+import { products } from '@/lib/products'
+export default function Admin(){return <main className="section"><h2>Admin Dashboard</h2><p className="muted">Inventory and fulfillment overview. Connect Supabase to make this live.</p><table className="table"><thead><tr><th>Product</th><th>Inventory</th><th>Status</th><th>Fulfillment</th></tr></thead><tbody>{products.map(p=><tr key={p.slug}><td>{p.name}</td><td>{p.inventory}</td><td>Active</td><td>Ready</td></tr>)}</tbody></table></main>}

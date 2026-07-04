@@ -1,0 +1,1 @@
+export default function Privacy(){return <main className="section"><h2>Privacy Policy</h2><p className="muted">Replace this starter privacy page with your final legal policy before launch.</p></main>}
