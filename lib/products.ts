@@ -5,6 +5,7 @@ export const products = [
     category: "Metabolic",
     description: "Premium dissolvable peptide strip.",
     price: "$399",
+inventory: 100,
   },
   {
     slug: "semaglutide-strip",
@@ -12,6 +13,7 @@ export const products = [
     category: "Weight Management",
     description: "Alternative peptide delivery.",
     price: "$349",
+inventory: 100,
   },
   {
     slug: "nad-strip",
@@ -19,6 +21,7 @@ export const products = [
     category: "Longevity",
     description: "Daily wellness support.",
     price: "$199",
+inventory: 100,
   },
   {
     slug: "pt141-oxytocin-strip",
@@ -26,6 +29,7 @@ export const products = [
     category: "Performance",
     description: "Performance wellness strip.",
     price: "$249",
+inventory: 100,
   },
 ];
 
