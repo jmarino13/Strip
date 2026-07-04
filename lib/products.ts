@@ -1,10 +1,30 @@
-export type Product = { slug:string; name:string; category:string; price:number; image:string; description:string; benefits:string[]; inventory:number }
-export const products: Product[] = [
- {slug:'tirzepatide',name:'Tirzepatide Strip',category:'Metabolic',price:399,image:'/products/tirzepatide.jpeg',description:'Premium dissolvable strip format designed for sublingual delivery and patient convenience.',benefits:['Sublingual strip technology','Bypasses stomach acid','Premium patient experience'],inventory:100},
- {slug:'pt141-oxytocin',name:'PT-141 / Oxytocin Strip',category:'Intimacy',price:249,image:'/products/pt141-oxytocin.jpeg',description:'A premium strip blend positioned for wellness, connection, and confidence.',benefits:['Dissolves orally','No injection needed','Concierge wellness positioning'],inventory:100},
- {slug:'nad',name:'NAD+ Strip',category:'Energy',price:229,image:'/images/strip-logo.jpeg',description:'Rejuvenate-focused NAD+ strip for daily cellular wellness support.',benefits:['Daily performance support','Oral strip technology','Premium format'],inventory:100},
- {slug:'bpc157',name:'BPC-157 Strip',category:'Recovery',price:199,image:'/images/strip-logo.jpeg',description:'Recovery-focused peptide strip for a cleaner, easier patient experience.',benefits:['Recovery positioning','No needles','Easy compliance'],inventory:100},
- {slug:'ghk-cu',name:'GHK-Cu Strip',category:'Beauty',price:199,image:'/images/strip-logo.jpeg',description:'Beauty and skin-support focused strip format for premium wellness programs.',benefits:['Beauty positioning','Luxury wellness fit','Simple dosing experience'],inventory:100},
- {slug:'cjc1295',name:'CJC-1295 Strip',category:'Performance',price:229,image:'/images/strip-logo.jpeg',description:'Performance-focused peptide strip for clinics and direct-to-consumer wellness programs.',benefits:['Performance positioning','Modern delivery','Premium packaging'],inventory:100}
-]
-export const findProduct=(slug:string)=>products.find(p=>p.slug===slug)
+export const products = [
+  {
+    name: "Tirzepatide Strip",
+    category: "Metabolic",
+    description:
+      "Premium dissolvable peptide strip.",
+    price: "$399",
+  },
+  {
+    name: "Semaglutide Strip",
+    category: "Weight Management",
+    description:
+      "Alternative peptide delivery.",
+    price: "$349",
+  },
+  {
+    name: "NAD+ Strip",
+    category: "Longevity",
+    description:
+      "Daily wellness support.",
+    price: "$199",
+  },
+  {
+    name: "PT-141 / Oxytocin",
+    category: "Performance",
+    description:
+      "Performance wellness strip.",
+    price: "$249",
+  },
+];
