@@ -15,7 +15,7 @@ export async function POST(req: Request) {
   const session = await stripe.checkout.sessions.create({
     mode: 'payment',
     payment_method_types: ['card'],
-    line_items: [{ price_data: { currency: 'usd', product_data: { name: product.name }, unit_amount: number(product.price.replace("$", "")) * 100 }, quantity: 1 }],
+    line_items: [{ price_data: { currency: 'usd', product_data: { name: product.name }, unit_amount: Number(product.price.replace("$", "")) * 100 }, quantity: 1 }],
     success_url: `${origin}/account?success=true`,
     cancel_url: `${origin}/products/${product.slug}`,
     metadata: { product_slug: product.slug }
