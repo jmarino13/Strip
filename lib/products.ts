@@ -6,6 +6,11 @@ export const products = [
     description: "Premium dissolvable peptide strip.",
     price: "$399",
 inventory: 100,
+benefits: [
+  "Sublingual strip delivery",
+  "Bypasses stomach acid",
+  "No injection required"
+],
   },
   {
     slug: "semaglutide-strip",
@@ -14,6 +19,11 @@ inventory: 100,
     description: "Alternative peptide delivery.",
     price: "$349",
 inventory: 100,
+benefits: [
+  "Sublingual strip delivery",
+  "Bypasses stomach acid",
+  "No injection required"
+],
   },
   {
     slug: "nad-strip",
@@ -22,6 +32,11 @@ inventory: 100,
     description: "Daily wellness support.",
     price: "$199",
 inventory: 100,
+benefits: [
+  "Sublingual strip delivery",
+  "Bypasses stomach acid",
+  "No injection required"
+],
   },
   {
     slug: "pt141-oxytocin-strip",
@@ -30,6 +45,11 @@ inventory: 100,
     description: "Performance wellness strip.",
     price: "$249",
 inventory: 100,
+benefits: [
+  "Sublingual strip delivery",
+  "Bypasses stomach acid",
+  "No injection required"
+],
   },
 ];
 
