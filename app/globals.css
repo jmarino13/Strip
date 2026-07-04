@@ -1,1 +1,64 @@
-:root{--black:#020204;--gold:#d6a84a;--purple:#9b63ff;--white:#f7f4ef;--muted:#bfb8c8;--panel:#0b0b10;--line:#2a2431}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#20112d 0,#060507 32%,#020204 100%);color:var(--white);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:10;background:rgba(2,2,4,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav-inner{max-width:1180px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:28px;letter-spacing:10px;color:var(--gold);font-weight:700}.nav-links{display:flex;gap:22px;color:#ddd;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:linear-gradient(135deg,#ecce7a,#9a6a19);color:#090609;padding:13px 20px;border-radius:999px;font-weight:700;letter-spacing:1px}.btn.secondary{background:transparent;color:var(--white);border-color:#6c527e}.hero{max-width:1180px;margin:0 auto;padding:70px 24px 40px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.eyebrow{color:var(--purple);letter-spacing:5px;font-size:13px;font-weight:700;text-transform:uppercase}.hero h1{font-size:68px;line-height:.94;margin:20px 0;background:linear-gradient(90deg,#fff,#d6a84a,#9b63ff);-webkit-background-clip:text;color:transparent}.hero p{color:#d4cfda;font-size:20px;line-height:1.6;max-width:650px}.hero-card{border:1px solid var(--line);border-radius:30px;padding:16px;background:linear-gradient(180deg,#101017,#040405);box-shadow:0 30px 90px rgba(155,99,255,.15)}.hero-card img{width:100%;border-radius:22px;display:block}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.section{max-width:1180px;margin:auto;padding:62px 24px}.section h2{font-size:42px;margin:0 0 15px}.muted{color:var(--muted);line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(12,12,18,.8);border:1px solid var(--line);border-radius:24px;padding:24px}.card h3{color:#fff;margin-top:0}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid var(--line);background:#09090d;border-radius:24px;overflow:hidden}.product img{width:100%;height:210px;object-fit:cover;background:#000}.product-content{padding:18px}.price{color:var(--gold);font-size:24px;font-weight:700}.footer{border-top:1px solid var(--line);padding:38px 24px;text-align:center;color:#aaa}.table{width:100%;border-collapse:collapse;background:#09090d;border-radius:20px;overflow:hidden}.table th,.table td{border-bottom:1px solid var(--line);padding:14px;text-align:left}.badge{display:inline-block;border:1px solid #49345f;border-radius:999px;padding:7px 10px;color:#c9a8ff;font-size:12px}.input{width:100%;padding:13px;border-radius:14px;background:#08080c;border:1px solid #33253f;color:#fff;margin:8px 0 15px}.notice{font-size:13px;color:#bcb3c7;border:1px solid #3b3042;border-radius:18px;padding:16px;background:#08070b}@media(max-width:850px){.hero{grid-template-columns:1fr}.hero h1{font-size:46px}.grid,.product-grid{grid-template-columns:1fr}.nav-links{display:none}}
+body {
+  margin: 0;
+  background: #030303;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  background:
+    radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.25), transparent 35%),
+    radial-gradient(circle at 30% 20%, rgba(212, 175, 55, 0.18), transparent 30%),
+    #030303;
+}
+
+.eyebrow {
+  letter-spacing: 6px;
+  color: #b58cff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 110px;
+  letter-spacing: 24px;
+  margin: 0;
+  color: #d4af37;
+}
+
+h2 {
+  font-size: 42px;
+  letter-spacing: 6px;
+  margin: 10px 0 30px;
+}
+
+p {
+  max-width: 650px;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #d8d8d8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #d4af37;
+  padding: 16px 28px;
+  border-radius: 999px;
+}
+
+.hero-buttons a:first-child {
+  background: linear-gradient(90deg, #d4af37, #8b5cf6);
+  border: none;
+}
