@@ -282,4 +282,73 @@ justify-content:center;
 width:260px;
 height:420px;
 }
+}/* ===== STRIP LUXURY UPGRADE ===== */
+
+:root {
+  --gold: #d4af37;
+  --purple: #9b5cff;
+  --dark: #050505;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+.section {
+  padding: 120px 8%;
+}
+
+.glass {
+  background: var(--glass);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+}
+
+.productCard {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.productCard:hover {
+  transform: translateY(-10px);
+  border-color: var(--purple);
+  box-shadow: 0 20px 60px rgba(155, 92, 255, 0.25);
+}
+
+button {
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #ccc;
+}
+
+.navbar a:hover {
+  color: var(--purple);
+}
+
+.footer {
+  padding: 80px 8%;
+  text-align: center;
+  opacity: 0.6;
 }
