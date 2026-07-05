@@ -6,6 +6,7 @@ export const products = [
     description: "Premium dissolvable peptide strip.",
     price: "$399",
 inventory: 100,
+image: "/images/product-placeholder.png",
 benefits: [
   "Sublingual strip delivery",
   "Bypasses stomach acid",
@@ -19,6 +20,7 @@ benefits: [
     description: "Alternative peptide delivery.",
     price: "$349",
 inventory: 100,
+image: "/images/product-placeholder.png",
 benefits: [
   "Sublingual strip delivery",
   "Bypasses stomach acid",
@@ -32,6 +34,7 @@ benefits: [
     description: "Daily wellness support.",
     price: "$199",
 inventory: 100,
+image: "/images/product-placeholder.png",
 benefits: [
   "Sublingual strip delivery",
   "Bypasses stomach acid",
@@ -45,6 +48,7 @@ benefits: [
     description: "Performance wellness strip.",
     price: "$249",
 inventory: 100,
+image: "/images/product-placeholder.png",
 benefits: [
   "Sublingual strip delivery",
   "Bypasses stomach acid",
