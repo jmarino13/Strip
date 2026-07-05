@@ -25,9 +25,23 @@ export default function ProductCard({
 
       <h2 style={{ color: "#d4af37" }}>{price}</h2>
 
-      <Link href={`/products/${slug}`}>
-        <button>Add to Cart</button>
-      </Link>
+      <button
+  onClick={async () => {
+    await fetch("/api/cart/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        slug,
+        name,
+        price,
+      }),
+    });
+
+    alert("Added to cart");
+  }}
+>
+  Add to Cart
+</button>
     </div>
   );
 }
