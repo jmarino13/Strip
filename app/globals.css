@@ -393,4 +393,42 @@ button:hover {
   .heroContent h1 {
     font-size: 52px;
   }
+}.providerHero {
+  min-height: 80vh;
+  padding: 140px 8% 80px;
+  background:
+    radial-gradient(circle at 80% 25%, rgba(155, 92, 255, 0.25), transparent 35%),
+    radial-gradient(circle at 20% 15%, rgba(212, 175, 55, 0.18), transparent 30%),
+    #030303;
+}
+
+.providerHero h1 {
+  font-size: 72px;
+  max-width: 900px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.providerHero p {
+  max-width: 720px;
+  font-size: 21px;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+@media(max-width: 1000px) {
+  .providerHero h1 {
+    font-size: 46px;
+  }
+
+  .dashboardGrid {
+    grid-template-columns: 1fr;
+  }
 }
