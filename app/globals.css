@@ -431,4 +431,62 @@ button:hover {
   .dashboardGrid {
     grid-template-columns: 1fr;
   }
+}.techHero {
+  min-height: 80vh;
+  padding: 140px 8% 80px;
+  background:
+    radial-gradient(circle at 70% 25%, rgba(155, 92, 255, 0.25), transparent 35%),
+    radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.16), transparent 30%),
+    #030303;
+}
+
+.techHero h1 {
+  font-size: 76px;
+  max-width: 950px;
+  line-height: 0.95;
+  margin-bottom: 30px;
+}
+
+.techHero p {
+  max-width: 760px;
+  font-size: 21px;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+.comparisonTable {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row div {
+  padding: 24px;
+}
+
+.row.header {
+  background: rgba(155, 92, 255, 0.18);
+  color: #d4af37;
+  font-weight: 700;
+}
+
+@media(max-width: 900px) {
+  .techHero h1 {
+    font-size: 46px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
 }
