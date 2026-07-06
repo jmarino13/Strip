@@ -1,4 +1,4 @@
-"use client";
+import AddToCartButton from "@/components/AddToCartButton";
 
 type Props = {
   name: string;
@@ -18,30 +18,10 @@ export default function ProductCard({
   return (
     <div className="productCard glass">
       <div style={{ fontSize: 12, color: "#9b5cff" }}>{category}</div>
-
       <h3>{name}</h3>
-
       <p style={{ color: "#aaa" }}>{description}</p>
-
       <h2 style={{ color: "#d4af37" }}>{price}</h2>
-
-      <button
-  onClick={async () => {
-    await fetch("/api/cart/add", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        slug,
-        name,
-        price,
-      }),
-    });
-
-    alert("Added to cart");
-  }}
->
-  Add to Cart
-</button>
+      <AddToCartButton slug={slug} name={name} price={price} />
     </div>
   );
 }
