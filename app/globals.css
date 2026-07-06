@@ -489,4 +489,72 @@ button:hover {
   .row {
     grid-template-columns: 1fr;
   }
+}.splitSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  padding: 120px 8%;
+  background: #050505;
+}
+
+.splitSection h2,
+.providerBand h2,
+.trustSection h2 {
+  font-size: 56px;
+  margin: 20px 0;
+}
+
+.splitSection p,
+.providerBand p {
+  color: #cfcfcf;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin-bottom: 35px;
+}
+
+.visualPanel {
+  min-height: 420px;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at center, rgba(155, 92, 255, 0.35), transparent 45%),
+    rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatingStrip {
+  width: 130px;
+  height: 230px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #c19cff, #6d35ff);
+  box-shadow: 0 0 80px rgba(155, 92, 255, 0.65);
+  transform: rotate(-12deg);
+}
+
+.providerBand {
+  background:
+    radial-gradient(circle at 75% 25%, rgba(155, 92, 255, 0.18), transparent 35%),
+    #080808;
+}
+
+.trustSection {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.15), transparent 30%),
+    #050505;
+}
+
+@media(max-width: 1000px) {
+  .splitSection {
+    grid-template-columns: 1fr;
+  }
+
+  .splitSection h2,
+  .providerBand h2,
+  .trustSection h2 {
+    font-size: 40px;
+  }
 }
